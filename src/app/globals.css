@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  --color-background: #F8FAFC;
+  --color-foreground: #0F172A;
+
+  --color-primary: #0F172A;
+  --color-primary-light: #1E293B;
+  --color-primary-dark: #020617;
+
+  --color-secondary: #B45309;
+  --color-secondary-light: #D97706;
+  --color-secondary-dark: #78350F;
+
+  --color-accent: #DC2626;
+  --color-accent-hover: #B91C1C;
+}
+
+/* Dark mode overrides if needed, though we are using class/media strategy */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #020617;
+    --color-foreground: #F8FAFC;
+  }
+}
+
+/* Base styles using the new theme variables */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
