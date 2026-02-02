@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Gavel, Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+import Image from 'next/image';
+import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -9,8 +10,14 @@ export default function Footer() {
 
                     {/* Brand Column */}
                     <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                            <Gavel className="h-6 w-6 text-secondary" />
+                        <div className="flex items-center gap-3">
+                            <Image
+                                src="/image/crk logo.jpg"
+                                alt="The Justice Ledger Logo"
+                                width={48}
+                                height={48}
+                                className="rounded-full object-cover"
+                            />
                             <span className="font-serif text-xl font-bold text-white">The Justice Ledger</span>
                         </div>
                         <p className="text-sm leading-relaxed">

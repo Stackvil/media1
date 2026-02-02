@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const navigation = [
+    { name: 'Home', href: '/' },
     { name: 'Breaking News', href: '/news' },
     { name: 'Criminal', href: '/categories/criminal' },
     { name: 'Civil', href: '/categories/civil' },
@@ -24,13 +25,15 @@ export default function Header() {
                 <div className="flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
                         <span className="sr-only">The Justice Ledger</span>
-                        <Image
-                            src="/image/crk logo.jpg"
-                            alt="CRK Logo"
-                            width={64}
-                            height={64}
-                            className="h-16 w-auto rounded-full object-cover group-hover:scale-110 transition-transform"
-                        />
+                        <div className="relative h-12 w-12 overflow-hidden rounded-full bg-white flex items-center justify-center border-2 border-white transition-transform group-hover:scale-105">
+                            <Image
+                                src="/image/crk logo.jpg"
+                                alt="CRK Logo"
+                                width={64}
+                                height={64}
+                                className="h-full w-full object-cover scale-150"
+                            />
+                        </div>
                         <span className="font-serif text-2xl font-bold tracking-tight text-white">
                             The Justice <span className="text-secondary">Ledger</span>
                         </span>
@@ -59,7 +62,7 @@ export default function Header() {
                         <Link
                             key={item.name}
                             href={item.href}
-                            className="text-sm font-semibold leading-6 text-gray-100 hover:text-secondary transition-colors uppercase tracking-wide"
+                            className="text-sm font-semibold leading-6 text-gray-100 hover:text-secondary transition-colors uppercase tracking-wide gun-trigger hover-recoil relative"
                         >
                             {item.name}
                         </Link>

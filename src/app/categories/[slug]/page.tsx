@@ -49,6 +49,24 @@ const allNews = [
         imageUrl: "https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?auto=format&fit=crop&q=80&w=800",
         section: "family"
     },
+    {
+        title: "Landmark Civil Rights Judgment",
+        summary: "The High Court delivered a significant verdict today reinforcing the civil liberties of citizens in public spaces.",
+        category: "Civil Law",
+        date: "Oct 18, 2024",
+        slug: "landmark-civil-rights-judgment",
+        imageUrl: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&q=80&w=800",
+        section: "civil"
+    },
+    {
+        title: "New Consumer Protection Guidelines",
+        summary: "Updated guidelines for e-commerce platforms to ensure fair trade practices and better consumer grievance redressal.",
+        category: "Civil Law",
+        date: "Oct 15, 2024",
+        slug: "new-consumer-protection-guidelines",
+        imageUrl: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=800",
+        section: "civil"
+    },
 ];
 
 const categoryMap: { [key: string]: string } = {
