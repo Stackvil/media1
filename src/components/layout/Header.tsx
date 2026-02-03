@@ -25,13 +25,13 @@ export default function Header() {
                 <div className="flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
                         <span className="sr-only">The Justice Ledger</span>
-                        <div className="relative h-12 w-12 overflow-hidden rounded-full bg-white flex items-center justify-center border-2 border-white transition-transform group-hover:scale-105">
+                        <div className="relative h-12 w-12 overflow-hidden rounded-full bg-white flex items-center justify-center border-2 border-white shadow-inner transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
                             <Image
                                 src="/image/crk logo.jpg"
                                 alt="CRK Logo"
                                 width={64}
                                 height={64}
-                                className="h-full w-full object-cover scale-150"
+                                className="h-full w-full object-cover"
                             />
                         </div>
                         <span className="font-serif text-2xl font-bold tracking-tight text-white">

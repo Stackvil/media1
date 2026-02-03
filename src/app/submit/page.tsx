@@ -44,8 +44,8 @@ export default function SubmitCasePage() {
             <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-xl p-8 border border-gray-200 space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                        <label className="block text-sm font-bold text-gray-700">Your Name (Optional)</label>
-                        <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                        <label className="block text-sm font-bold text-gray-700">Your Name <span className="text-red-500">*</span></label>
+                        <input type="text" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all" placeholder="John Doe" />
                     </div>
                     <div className="space-y-2">
                         <label className="block text-sm font-bold text-gray-700">Email Address <span className="text-red-500">*</span></label>
@@ -64,7 +64,7 @@ export default function SubmitCasePage() {
                 </div>
 
                 <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Evidence / Documents (PDF, JPG)</label>
+                    <label className="block text-sm font-bold text-gray-700">Evidence / Documents (PDF, JPG) <span className="text-red-500">*</span></label>
                     <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:bg-gray-50 transition-colors cursor-pointer group">
                         <Upload className="w-10 h-10 text-gray-400 mx-auto mb-4 group-hover:text-secondary" />
                         <p className="text-sm text-gray-600">Drag and drop files here, or <span className="text-secondary font-bold">browse</span></p>
@@ -77,7 +77,7 @@ export default function SubmitCasePage() {
                         Submit Case for Review
                     </button>
                 </div>
-            </form>
-        </div>
+            </form >
+        </div >
     );
 }

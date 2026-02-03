@@ -15,9 +15,9 @@ interface NewsCardProps {
 
 export default function NewsCard({ title, summary, category, date, imageUrl, slug, featured = false }: NewsCardProps) {
     return (
-        <Link href={`/news/${slug}`} className="block">
+        <Link href={`/news/${slug}`} className="block h-full">
             <article className={cn(
-                "flex flex-col group bg-white rounded-lg overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow hover-target hover-flash relative cursor-pointer",
+                "flex flex-col h-full group bg-white rounded-lg overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow hover-target hover-flash relative cursor-pointer",
                 featured ? "md:grid md:grid-cols-2 md:gap-8 min-h-[400px]" : ""
             )}>
                 {/* Image Section */}
@@ -41,7 +41,7 @@ export default function NewsCard({ title, summary, category, date, imageUrl, slu
                 </div>
 
                 {/* Content Section */}
-                <div className="p-6 flex flex-col justify-between">
+                <div className="p-6 flex flex-col justify-between flex-1">
                     <div className="space-y-4">
                         <div className="flex items-center text-xs text-gray-500 gap-4">
                             <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {date}</span>
